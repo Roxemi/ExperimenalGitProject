@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Interactive Elements</h1>
+    
+    <!-- Input Text Field -->
+    <label for="inputText">Enter some text:</label>
+    <input type="text" id="inputText" name="inputText">
+    <br><br>
+
+    <!-- Button -->
+    <button type="button" onclick="alert('Button Clicked!')">Click Me!</button>
+    <br><br>
+
+    <!-- ListBox-->
+    <label for="listBox">Choose an option:</label>
+    <select id="listBox" name="listBox">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+    <script>
+        document.getElementById('listBox').addEventListener('change', function() {
+            alert('You selected: ' + this.value);
+        });
+    </script>
+</body>
+</html>
