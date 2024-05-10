@@ -1,0 +1,15 @@
+input[type="text"] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 0.3s linear;
+}
+
+input[type="text"]:focus {
+    border-color: #555;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
